@@ -1,0 +1,9 @@
+services:
+  xtream2m3u:
+    build: .
+    container_name: xtream2m3u
+    restart: unless-stopped
+    ports:
+      - 5050:5050
+    environment:
+      - TZ=Europe/Paris
