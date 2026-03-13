@@ -33,7 +33,7 @@ Instead of giving your IPTV provider's URL to Threadfin/Emby, you provide your l
 `http://<YOUR_LOCAL_IP>:5050/get.php?host=<PROVIDER_URL>&username=<USER>&password=<PASS>&output=ts`
 
 **Example:**
-`http://192.168.1.201:5050/get.php?host=http://provider.url&username=myuser&password=mypass&output=ts`
+`http://192.168.1.1:5050/get.php?host=http://provider.url&username=myuser&password=mypass&output=ts`
 
 ## 📅 Usage (XMLTV / EPG Guide)
 
@@ -43,7 +43,7 @@ To proxy the TV Guide through the same system:
 `http://<YOUR_LOCAL_IP>:5050/xmltv.php?host=<PROVIDER_URL>&username=<USER>&password=<PASS>`
 
 **Example:**
-`http://192.168.1.201:5050/xmltv.php?host=http://provider.url&username=myuser&password=mypass`
+`http://192.168.1.1:5050/xmltv.php?host=http://provider.url&username=myuser&password=mypass`
 
 ## 🛡️ Advanced Features
 
@@ -51,7 +51,7 @@ To proxy the TV Guide through the same system:
 By default, the proxy disguises itself as `IPTVSmartersPlayer` to bypass basic firewall rules. You can override this by appending the `&user_agent=` parameter to your URLs.
 
 **Example with VLC:**
-`http://192.168.1.201:5050/get.php?host=http://provider.url&username=myuser&password=mypass&user_agent=VLC/3.0.12`
+`http://192.168.1.1:5050/get.php?host=http://provider.url&username=myuser&password=mypass&user_agent=VLC/3.0.12`
 
 **Example with HotPlayer:**
-`http://192.168.1.201:5050/get.php?host=http://provider.url&username=myuser&password=mypass&user_agent=HotPlayer`
+`http://192.168.1.1:5050/get.php?host=http://provider.url&username=myuser&password=mypass&user_agent=HotPlayer`
